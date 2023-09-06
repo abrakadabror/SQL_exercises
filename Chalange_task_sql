@@ -1,0 +1,9 @@
+SELECT title, length FROM film
+ORDER BY length ASC
+LIMIT 5; 
+
+and
+
+SELECT * FROM payment
+ORDER BY payment_date ASC
+LIMIT 10;
