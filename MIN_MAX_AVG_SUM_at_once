@@ -1,0 +1,21 @@
+MIN()
+SELECT MIN(replacement_cost) FROM film;
+
+MAX()
+SELECT MAX(replacement_cost) FROM film;
+
+Both methods at once:
+SELECT MAX(replacement_cost), MIN(replacement_cost) 
+FROM film;
+
+AVG:
+SELECT AVG(replacement_cost)
+FROM film;
+
+AVG() - rounded:
+SELECT ROUND(AVG(replacement_cost),2)
+FROM film;
+
+SUM()
+SELECT SUM(replacement_cost) 
+FROM film;
