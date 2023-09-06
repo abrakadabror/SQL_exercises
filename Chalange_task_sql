@@ -7,3 +7,7 @@ and
 SELECT * FROM payment
 ORDER BY payment_date ASC
 LIMIT 10;
+
+
+SELECT COUNT(length) FROM film 
+WHERE length <= 50; 
