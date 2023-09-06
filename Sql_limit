@@ -1,0 +1,6 @@
+/* sql LIMIT /*
+
+SELECT * FROM payment
+WHERE customer_id = 1
+ORDER BY payment_id DESC
+LIMIT 5; 
