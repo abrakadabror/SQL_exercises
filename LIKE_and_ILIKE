@@ -1,0 +1,30 @@
+Using pattern matching with string data
+Examples:
+
+LIKE: /* LIKE is a key sensitive.
+SELECT COUNT(*) FROM customer
+WHERE first_name LIKE 'J%' AND last_name LIKE 'S%'
+
+ILIKE: /* ILIKE is case insensitive */
+SELECT * FROM customer
+WHERE first_name ILIKE 'j%' AND last_name ILIKE 's%'
+
+The LIKE statment with who has 'er' somewhere in their first name:
+SELECT * FROM customer
+WHERE first_name LIKE '%er%'
+
+#another one statment where we are using a _ underscore with percent % to sort vaule which meet the conditions
+SELECT * FROM customer
+WHERE first_name NOT LIKE '_her%'
+
+/* filtered by using 'A%' and sorded byt last name withc limit 10 rows  
+SELECT * FROM customer
+WHERE first_name LIKE 'A%'
+ORDER BY last_name
+LIMIT 10
+
+pattern = wzor
+SELECT * FROM customer
+WHERE first_name LIKE 'A%' AND last_name NOT LIKE 'B%'
+ORDER BY last_name
+LIMIT 10
