@@ -1,0 +1,16 @@
+/* example GROUP BY
+SELECT category_col, AGG(data_col)
+FROM table
+WHERE category_col !='A'
+GROUP BY category_col
+
+/* sort results by  AAG function
+SELECT company, SUM(sales)
+FROM finance_table
+GROUP BY company
+ORDER BY SUM(sales)
+LIMIT 5
+
+SELECT customer_id, staff_id, SUM(amount) FROM payment
+GROUP BY staff_id, customer_id
+ORDER BY customer_id
